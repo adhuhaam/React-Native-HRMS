@@ -58,7 +58,7 @@ export default function Time_sheet({ navigation }) {
     console.log('token -> ', token._j);
     try {
       SetLoaderLogout(false);
-      const response = await fetch('https://hrms.alphadot.co.in/apigateway/api/user/logout', {
+      const response = await fetch('https://sit.hrms.alphadot.co.in/apigateway/api/user/logout', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -110,7 +110,7 @@ export default function Time_sheet({ navigation }) {
     const longitude = (location.coords.longitude);
     console.log(empId._j, token._j);
     try {
-      const response = await fetch(`https://hrms.alphadot.co.in/apigateway/payroll/timeSheet/checkIn/${empId._j}?Latitude=${latitude}&Longitude=${longitude}`,
+      const response = await fetch(`https://sit.hrms.alphadot.co.in/apigateway/payroll/timeSheet/checkIn/${empId._j}?Latitude=${latitude}&Longitude=${longitude}`,
         {
           method: "POST",
           headers: {
@@ -144,7 +144,7 @@ export default function Time_sheet({ navigation }) {
     const longitude = (location.coords.longitude);
     console.log(empId._j, token._j);
     try {
-      const response = await fetch(`https://hrms.alphadot.co.in/apigateway/payroll/timeSheet/checkOut/${empId._j}?Latitude=${latitude}&Longitude=${longitude}`,
+      const response = await fetch(`https://sit.hrms.alphadot.co.in/apigateway/payroll/timeSheet/checkOut/${empId._j}?Latitude=${latitude}&Longitude=${longitude}`,
         {
           method: "PUT",
           headers: {

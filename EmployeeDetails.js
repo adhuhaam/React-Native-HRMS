@@ -84,7 +84,7 @@ export default function EmployeeDetails({ navigation, route }) {
     console.log(token._j);
     try {
       SetLoaderLogout(false);
-      const response = await fetch('https://hrms.alphadot.co.in/apigateway/api/user/logout', {
+      const response = await fetch('https://sit.hrms.alphadot.co.in/apigateway/api/user/logout', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

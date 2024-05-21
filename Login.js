@@ -75,7 +75,7 @@ export default function Login({ navigation, route  }) {
     // }
     try {
       SetLoginState(true);
-      const response = await fetch('https://hrms.alphadot.co.in/apigateway/api/auth/login', {
+      const response = await fetch('https://sit.hrms.alphadot.co.in/apigateway/api/auth/login', {
         method: "POST",
         headers: {
           Accept: 'application/json',

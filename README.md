@@ -2,6 +2,7 @@
 - Check In 
 - Check Out
 - Login / Logout
+- Chatbot
 - Employee Attendance
 - Employee Data
 - Forgot Password
